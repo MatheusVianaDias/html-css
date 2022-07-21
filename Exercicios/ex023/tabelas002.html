@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
 
@@ -21,10 +22,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+
+        }
+
         td.num {
             text-align: right;
         }
@@ -35,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION = legenda
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +65,11 @@
                 TR, TD, TH  
     -->
     <table>
+        <caption>Populacao das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px ;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -156,9 +179,17 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, impedit fugiat temporibus itaque adipisci nobis at nihil laborum, eum accusamus eos voluptatibus. Distinctio magni dolor optio suscipit cum minima atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus impedit in sint molestiae a illum architecto, nostrum blanditiis harum adipisci similique sequi corporis cum consectetur commodi reprehenderit quidem perferendis ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptas nihil, nisi impedit quod corrupti nam maxime quam optio cupiditate. Assumenda facere, cum dolorum blanditiis ab modi culpa illum magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse placeat corrupti. Saepe magnam error, a velit vel, quae iste at asperiores repudiandae nisi eius impedit ea dicta deleniti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente saepe perferendis perspiciatis sequi mollitia minus odio cupiditate, veritatis atque ut doloribus eum enim dolorum. Cumque cupiditate vero consequuntur autem. lorem,    
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, impedit fugiat temporibus itaque adipisci nobis at nihil laborum, eum accusamus eos voluptatibus. Distinctio magni dolor optio suscipit cum minima atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus impedit in sint molestiae a illum architecto, nostrum blanditiis harum adipisci similique sequi corporis cum consectetur commodi reprehenderit quidem perferendis ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptas nihil, nisi impedit quod corrupti nam maxime quam optio cupiditate. Assumenda facere, cum dolorum blanditiis ab modi culpa illum magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse placeat corrupti. Saepe magnam error, a velit vel, quae iste at asperiores repudiandae nisi eius impedit ea dicta deleniti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente saepe perferendis perspiciatis sequi mollitia minus odio cupiditate, veritatis atque ut doloribus eum enim dolorum. Cumque cupiditate vero consequuntur autem. lorem,    
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, impedit fugiat temporibus itaque adipisci nobis at nihil laborum, eum accusamus eos voluptatibus. Distinctio magni dolor optio suscipit cum minima atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus impedit in sint molestiae a illum architecto, nostrum blanditiis harum adipisci similique sequi corporis cum consectetur commodi reprehenderit quidem perferendis ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptas nihil, nisi impedit quod corrupti nam maxime quam optio cupiditate. Assumenda facere, cum dolorum blanditiis ab modi culpa illum magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse placeat corrupti. Saepe magnam error, a velit vel, quae iste at asperiores repudiandae nisi eius impedit ea dicta deleniti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente saepe perferendis perspiciatis sequi mollitia minus odio cupiditate, veritatis atque ut doloribus eum enim dolorum. Cumque cupiditate vero consequuntur autem. lorem,    
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, impedit fugiat temporibus itaque adipisci nobis at nihil laborum, eum accusamus eos voluptatibus. Distinctio magni dolor optio suscipit cum minima atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus impedit in sint molestiae a illum architecto, nostrum blanditiis harum adipisci similique sequi corporis cum consectetur commodi reprehenderit quidem perferendis ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptas nihil, nisi impedit quod corrupti nam maxime quam optio cupiditate. Assumenda facere, cum dolorum blanditiis ab modi culpa illum magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse placeat corrupti. Saepe magnam error, a velit vel, quae iste at asperiores repudiandae nisi eius impedit ea dicta deleniti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente saepe perferendis perspiciatis sequi mollitia minus odio cupiditate, veritatis atque ut doloribus eum enim dolorum. Cumque cupiditate vero consequuntur autem. lorem,    
+    </p>
 </body>
 </html>
